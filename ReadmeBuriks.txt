@@ -80,7 +80,7 @@ Latitude Ref: N,S
 Longitude Ref: W,E
 Attempts to add GPS DateStamp and TimeStamp fields have thus far been unsuccesful.
 
-Remaining work…
+Remaining work√â
 
 1:
 - White balance and exposure controls
