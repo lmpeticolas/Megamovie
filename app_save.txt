@@ -1,0 +1,41 @@
+Background information
+
+A versatile application must be created to enable optimal observations of the total solar eclipse of August 21, 2017, to enable proper exposures of the solar corona and of the "Diamond Ring" effect. For a full description of the phenomenon, with many links, see the http://web.williams.edu/Astronomy/IAU_eclipses/ for example. We are interested here in both the phase of totality, during which faint coronal structure can be observed, and in the 2nd and 3rd contacts - the times of the last solar visibility before totality, the the first visibility after totality. These two phases require different kinds of observation. The Megamovie project aims at assembling a large number of observations, by a large number of observers, to generate a highly oversampled database containing unique scientific information. These notes refer to what can be done with an unaided smartphone camera, assisted by the Megamovie app.
+
+1. Totality. Here the objectives of the imagery are to capture as much of the spatial structure of the corona as possible, using a graded sequence of exposures that permit the widest possible contrast range: short exposures for the bright inner corona, and longer exposures for the fainter outer corona. The scientific applications of this imagery depends upon what actually happens in the corona during the ~90 minutes of totality. In addition to the corona, however, the gravitational deflection of starlight could be observable via the bright star Regulus, which fortuitously lies in the field of view. The stellar observation will require different optimal exposures.
+
+2. The "Diamond Ring". During the last glimpse of the Sun, or the first glimpse, one peers through the last valley on the Moon that the observing geometry permits. A crescent of light rapidly diminishes at 2nd contact, typically with several bright points and then one final one; the bright points are "Baily's Beads" the overall effect constitudes the "Diamond Ring" effect.
+
+High-level overview of the app functionality
+
+Task A: Interface with the users
+
+  A1: Information (links) for users
+  A2: Interrogate GPS information
+  A3: Setup guidance and warnings
+    A3.1: Alert at 10 minutes prior to 2nd contact
+    A3.2: Provide audible attitude control (1 degree tolerance based on location)
+  A4: "Go" button 
+  A5: Upload device ID and location
+
+Task B: Camera control
+
+  B1: Log system time and location to full NMEA precision as available over the period of totality
+  B2: Set exposure sequences based on uploaded device and location information (lookup tables)
+  B3: Schedule exposures if "Go" 
+  B4: Discard unwanted images (screen against incorrect time, saturation of image)
+
+Task C: Conclusion
+
+  C1: Upload images to Google 
+    C1.1: if online, do it
+    C2.2: if not, upload when the Net is available
+  C2: Best image selection (lookup criteria)
+    C2.1: Massage the best coronal image to display to user
+    C2.2: Select a good Baily's Bead exposure
+  C2: Report to user
+    C2.1 Display best images
+      C2.1.1 Baily's Beads
+      C2.1.2 The corona 
+    C2.2 Provide links to near-real-time activities
+  C3: Thanks page
