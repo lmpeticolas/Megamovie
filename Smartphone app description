@@ -4,5 +4,34 @@ A versatile application must be created to enable optimal observations of the to
 
 1. Totality. Here the objectives of the imagery are to capture as much of the spatial structure of the corona as possible, using a graded sequence of exposures that permit the widest possible contrast range: short exposures for the bright inner corona, and longer exposures for the fainter outer corona. The scientific applications of this imagery depends upon what actually happens in the corona during the ~90 minutes of totality. In addition to the corona, however, the gravitational deflection of starlight could be observable via the bright star Regulus, which fortuitously lies in the field of view. The stellar observation will require different optimal exposures.
 
-2. The "diamond ring". During the last glimpse of the Sun, or the first glimpse, one peers through the last valley on the Moon that the observing geometry permits. A crescent of light rapidly diminishes at 2nd contact, typically with several bright points and then one final one; the bright points are "Baily's Beads" the overall effect constitudes the "Diamond Ring" effect.
+2. The "Diamond Ring". During the last glimpse of the Sun, or the first glimpse, one peers through the last valley on the Moon that the observing geometry permits. A crescent of light rapidly diminishes at 2nd contact, typically with several bright points and then one final one; the bright points are "Baily's Beads" the overall effect constitudes the "Diamond Ring" effect.
+
+High-level overview of the app functionality
+
+Task A: Interface with the users
+
+  A1: Information (links) for users
+  A2: Setup guidance and warnings
+  A3: "Go" button
+  A4: Upload device ID and location
+
+Task B: Camera control
+
+  B1: Log system time and location to full NMEA precision
+  B2: Set exposure sequences based on uploaded device and location information (lookup tables)
+  B3: Schedule exposures if "Go" 
+  B4: Discard unwanted images
+
+Task C: Conclusion
+
+  C1: Upload images to Google 
+    C1.1: if online, do it
+    C2.2: if not, upload when the Net is available
+  C2: Best image selection (lookup criteria)
+  C2: Report to user
+    C2.1 Display best image
+    C2.2 Links to near real time activities
+  
+
+
 
